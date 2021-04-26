@@ -65,10 +65,19 @@ html, body {
 }
 
 .footer {
-    text-align: center;
+    height:55px;
     color: white;
     background-color: black;
     margin-top:2em;
+}
+
+.footer-links {
+    padding:0.7em;
+    margin-left:8em;
+}
+.footer-links li{
+    display: inline;
+    padding:6px;
 }
 
 .navbar {
@@ -82,29 +91,34 @@ html, body {
 
 .flex-container {
     display: flex;
-    height:95%;
+    height:90%;
     padding:20px;
 
 }
+a {
+    color:black;
+}
 .columns {
-    min-height:500px;
+    min-height:430px;
 }
 div.columns {
     flex:6;
     margin:1em;
-
 }
 
 div.columns:nth-of-type(even){
     flex: 3;
-                  
 }
    
 div.columns:nth-of-type(odd){
     background: #85929E;
 }
+
 div.columns:nth-of-type(even){
     background: #A5DDEF;
+}
+.footer a {
+    color:white;
 }
 
 @media screen and (max-width: 800px) {
