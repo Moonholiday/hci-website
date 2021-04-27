@@ -4,8 +4,13 @@ html, body {
     height:100%;
 }
 
+li:hover {
+    text-decoration: none;
+}
+
 .header {
     background-color: #FFFFFF;
+    overflow: auto;
 }
 .header input[type=text] {
     background-color: #ECECEC; 
@@ -17,7 +22,7 @@ html, body {
 }
   
 /* Style the header links */
-.header a {
+.header-right a {
     margin-top:0.6em;
     margin-right:0.5em;
     float: left;
@@ -31,9 +36,17 @@ html, body {
 }
 
 /* Change the background color on mouse-over */
-.header a:hover {
+.header-right a:first-of-type:hover {
     background-color: #ddd;
     color: black;
+    cursor: pointer;
+}
+
+div.header:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 /* Style the active/current link*/
@@ -46,13 +59,12 @@ html, body {
     float: right;
 }
 
-.header img.logo {
+.logo {
     margin-left:0.6em;
 }
 
 .header img.user {
-    margin-top:0.8em;
-    margin-right:0.5em;
+    margin-right:2em;
 }
 .bread {
     background-color: white;
@@ -122,15 +134,20 @@ div.columns:nth-of-type(even){
 }
 
 @media screen and (max-width: 800px) {
-        #col2 {
+    #col2 {
         display: none;
     }
     #col1 {
         max-width:95%;
     }
 }
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 699px) {
+    .logo {
+        margin: auto;
+        display: block;
+    }
 
     .header input {
         display: none;
@@ -147,4 +164,3 @@ div.columns:nth-of-type(even){
         max-width:90%;
     }
 }
-
