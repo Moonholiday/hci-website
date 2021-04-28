@@ -8,6 +8,7 @@ li:hover {
     text-decoration: none;
 }
 
+
 .header {
     background-color: #FFFFFF;
     overflow: auto;
@@ -132,7 +133,33 @@ div.columns:nth-of-type(even){
 .footer a {
     color:white;
 }
+/* signup */
 
+#google {
+    background-color: #E1D7D7;
+    margin: 0em 0 1em;
+}
+
+#github{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 0 0 1em;
+}
+
+.container form {
+    margin: 0 200px 2em;
+}
+
+form button[type=submit] {
+    margin: 1em 0 2em;
+}
+
+.iconify {
+    margin: 0 10px 0;
+}
+
+/* responsive */
 @media screen and (max-width: 800px) {
     #col2 {
         display: none;
@@ -140,9 +167,12 @@ div.columns:nth-of-type(even){
     #col1 {
         max-width:95%;
     }
+    .container form {
+        margin: 0 20px 2em;
+    }
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+/*media queries for responsiveness */
 @media screen and (max-width: 699px) {
     .logo {
         margin: auto;
