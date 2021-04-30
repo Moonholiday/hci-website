@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
     <title>cloud</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- header -->
     <div class="header">
-            <a href="index.html"><img class="logo" src="logo.png" alt="cloud-forum" width="100"></a>
-            <input type="text" placeholder="Search...">
-            <div class="header-right">
-                <a class="login" href="login.html">Log In</a>
-                <a class="active" href="signup.html">Sign Up</a>
-                <a href="profile.html"><img class="user" src="user.png" alt="user" width="30"></a>
-            </div>
+      <a href="index.html"
+        ><img class="logo" src="images/logo.png" alt="cloud-forum" width="100"
+      /></a>
+      <input type="text" placeholder="Search..." />
+      <span
+        class="iconify"
+        data-icon="fa-solid:search"
+        data-inline="false"
+        data-width="25"
+      ></span>
+      <div class="header-right">
+        <a class="login" href="login.html">Log In</a>
+        <a class="active" href="signup.html">Sign Up</a>
+        <a href="profile.html"
+          ><img class="user" src="images/user.png" alt="user" width="30"
+        /></a>
+      </div>
     </div>
 
     <!-- navigation -->
     <div class="container">
-        <ul class="outer-bar">
-            <li class="navbar"><a href="#">Categories</a></li>
-            <li class="navbar"><a href="#">Level</a></li>
-            <li class="navbar"><a href="#">Popular</a></li>
-        </ul>
+      <ul class="outer-bar">
+        <li class="navbar"><a href="categories.html">Categories</a></li>
+        <li class="navbar"><a href="level.html">Level</a></li>
+        <li class="navbar"><a href="Popular.html">Popular</a></li>
+      </ul>
     </div>
 
     <!-- main -->
     <div class="container">
-        <h1>profile</h1>
-        <div class="flex-container">
-            <div class="columns" id="col1"><h1>col1</h1></div>
+      <div class="profile-left">
+        <div class="avatar-center">
+          <h1>profile</h1>
+          <img
+            src="images/avatar.jpg"
+            alt="Avatar"
+            style="border-radius: 50%;"
+          />
+          <p><b>420</b>EXP</p>
         </div>
+      </div>
+      <div class="profile-right">
+        <h1>Interests</h1>
+      </div>
+      <hr />
+      <div class="bio">
+        <h2>User details</h2>
+        <br />
+        <h4>Elliot Alderson</h4>
+        <p>
+          A cybersecurity engineer and vigilante hacker who lives in New York
+          City. As a senior network technician for cyber security firm Allsafe,
+          I protect corporate clients — including the ubiquitous Evil Corp —
+          from security breaches and data theft.
+        </p>
+        <p><b>User since 2021</b></p>
+      </div>
+      <br />
     </div>
 
     <!-- footer -->
     <div class="footer">
-        <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div><span>© 2021 Cloud Forum Inc. All rights reserved.</span></div>
     </div>
-
-</body>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
 </html>

@@ -1,51 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
     <title>cloud</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- header -->
     <div class="header">
-        <a href="index.html"><img class="logo" src="logo.png" alt="cloud-forum" width="100"></a>
-        <input type="text" placeholder="Search...">
-        <div class="header-right">
-            <a class="login" href="#Log In">Log In</a>
-            <a class="active" href="#Sign up">Sign Up</a>
-            <a href="profile.html"><img class="user" src="user.png" alt="user" width="30"></a>
-        </div>
+      <a href="index.html"
+        ><img class="logo" src="images/logo.png" alt="cloud-forum" width="100"
+      /></a>
+      <input type="text" placeholder="Search..." />
+      <span
+        class="iconify"
+        data-icon="fa-solid:search"
+        data-inline="false"
+        data-width="25"
+      ></span>
+      <div class="header-right">
+        <a class="login" href="login.html">Log In</a>
+        <a class="active" href="signup.html">Sign Up</a>
+        <a href="profile.html"
+          ><img class="user" src="images/user.png" alt="user" width="30"
+        /></a>
+      </div>
     </div>
 
     <!-- navigation -->
     <div class="container">
-        <ul class="outer-bar">
-            <li class="navbar"><a href="#">Categories</a></li>
-            <li class="navbar"><a href="#">Level</a></li>
-            <li class="navbar"><a href="#">Popular</a></li>
-        </ul>
+      <ul class="outer-bar">
+        <li class="navbar"><a href="categories.html">Categories</a></li>
+        <li class="navbar"><a href="level.html">Level</a></li>
+        <li class="navbar"><a href="Popular.html">Popular</a></li>
+      </ul>
     </div>
 
     <!-- main-section -->
+
     <div class="container">
-        <div class="flex-container">
-            <h1>Container</h1>
-            <div class="columns" id="col1"><h1>col1</h1></div>
-            <div class="columns" id="col2"><h1>col2</h1></div>
+      <h3 class="text-center">Contact us</h3>
+      <br />
+
+      <div class="row">
+        <div class="col-md-8">
+          <form action="/post" method="post">
+            <input
+              class="form-control"
+              name="name"
+              placeholder="Name..."
+            /><br />
+            <input
+              class="form-control"
+              name="phone"
+              placeholder="Phone..."
+            /><br />
+            <input
+              class="form-control"
+              name="email"
+              placeholder="E-mail..."
+            /><br />
+            <textarea
+              class="form-control"
+              name="text"
+              placeholder="How can we help you?"
+              style="height: 150px;"
+            ></textarea
+            ><br />
+            <input
+              class="btn btn-primary"
+              type="submit"
+              value="Send"
+            /><br /><br />
+          </form>
         </div>
+        <div class="col-md-4">
+          <b>Customer service:</b> <br />
+          Phone: +1 129 209 291<br />
+          E-mail: <a href="mailto:support@mysite.com">support@mysite.com</a
+          ><br />
+          <br /><br />
+          <b>Headquarter:</b><br />
+          Company Inc, <br />
+          Las vegas street 201<br />
+          55001 Nevada, USA<br />
+          Phone: +1 145 000 101<br />
+          <a href="mailto:usa@mysite.com">usa@mysite.com</a><br />
+
+          <br /><br />
+          <b>Hong kong:</b><br />
+          Company HK Litd, <br />
+          25/F.168 Queen<br />
+          Wan Chai District, Hong Kong<br />
+          Phone: +852 129 209 291<br />
+          <a href="mailto:hk@mysite.com">hk@mysite.com</a><br />
+        </div>
+      </div>
     </div>
 
     <!-- footer -->
     <div class="footer">
-        <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div><span>© 2021 Cloud Forum Inc. All rights reserved.</span></div>
     </div>
-
-</body>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
 </html>

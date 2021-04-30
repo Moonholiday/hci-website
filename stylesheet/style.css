@@ -1,0 +1,361 @@
+/* Style the header with a grey background and some padding */
+
+body {
+  background-color: var(--s-color);
+}
+
+li:hover {
+  text-decoration: none;
+}
+
+:root {
+  /* --p-color: #ffffff;
+  --s-color: #dae0e6; */
+  --p-color: white;
+  --s-color: #dae0e6;
+}
+.header-right a {
+  color: var(--p-color);
+}
+.header {
+  background-color: var(--p-color);
+  overflow: auto;
+}
+.header input[type="text"] {
+  background-color: #ececec;
+  margin-left: 5em;
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  width: 30%;
+}
+
+/* Style the header links */
+.header-right a {
+  margin-top: 0.6em;
+  margin-right: 0.5em;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 6px;
+}
+
+/* Change the background color on mouse-over */
+.header-right a:first-of-type:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+div.header:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #9ce1ff;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+.logo {
+  margin-left: 0.6em;
+}
+
+.header img.user {
+  margin-right: 2em;
+}
+.bread {
+  background-color: var(--p-color);
+  height: 10%;
+  margin: 2rem;
+}
+.container {
+  background-color: var(--p-color);
+  margin-top: 3rem;
+  border-style: ridge;
+  border-width: 1.5px;
+}
+
+.outer-bar {
+  display: inline-block;
+  margin: 0 1em 0;
+  padding: 6px;
+}
+
+.footer {
+  height: 100px;
+  color: var(--s-color);
+  background-color: black;
+  margin-top: 3em;
+}
+.footer div {
+  text-align: center;
+}
+
+.footer-links {
+  padding: 0.7em;
+  margin-left: 5em;
+}
+.footer-links li {
+  display: inline-block;
+  padding: 6px;
+}
+.footer a {
+  color: var(--s-color);
+}
+.navbar {
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  padding: 10px;
+  margin: 3em 5em;
+}
+a {
+  color: black;
+}
+.columns {
+  background: var(--p-color);
+  padding: 20px;
+  height: 100%;
+}
+div.columns {
+  flex: 6;
+  margin: 1em;
+}
+div.columns::after {
+  height: auto;
+  content: "";
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.columns:nth-of-type(even) {
+  flex: 3;
+}
+.tags {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 6px;
+  grid-gap: 20px 20px;
+}
+.tags span {
+  font-weight: 400;
+  border-radius: 4px;
+  background: #9ce1ff;
+  padding: 6px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* signup */
+#google {
+  background-color: #e1d7d7;
+  margin: 0em 0 1em;
+}
+
+#github {
+  padding: 10px;
+  background-color: black;
+  color: var(--p-color);
+  margin: 0 0 1em;
+}
+
+.container form {
+  margin: 0 200px 2em;
+}
+
+form button[type="submit"] {
+  margin: 1em 0 2em;
+}
+
+.iconify {
+  margin: 0 10px 0;
+}
+.iconify:hover {
+  cursor: pointer;
+}
+.next-line {
+  padding: 20px 10px 20px;
+  margin: 16px 4px 16px;
+  border-style: ridge;
+  border-width: 1.5px;
+}
+.complete {
+  display: none;
+}
+
+.more {
+  background: #9ce1ff;
+  color: navy;
+  font-size: 13px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+.ad {
+  margin-bottom: 1em;
+}
+
+.profile-left {
+  margin: 3em 1em 0 3em;
+  max-width: 400px;
+  display: inline-block;
+}
+
+.avatar-center {
+  display: table;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+.avatar-center p,
+h1 {
+  padding: 4px;
+}
+
+.profile-right {
+  max-width: 400px;
+  float: right;
+  display: inline-block;
+  margin: 7em 4em 7em;
+}
+.bio {
+  padding: 10px 30px 10px;
+}
+.profile-right:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about_links {
+  margin: auto;
+}
+.redirects {
+  color: var(--p-color);
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  padding: 13px;
+  border-radius: 10px;
+}
+.redirects:hover {
+  border-style: solid;
+  background-color: var(--p-color);
+  color: black;
+  text-decoration: none;
+}
+.how-to div {
+  display: inline-grid;
+  background-color: blue;
+  margin: 1em;
+  padding: 20px;
+  color: var(--p-color);
+}
+
+#zoom {
+}
+
+.fa {
+  float: right;
+  cursor: pointer;
+  user-select: none;
+  font-size: 30px;
+  margin: 4px 0 4px;
+}
+.fa:hover {
+  color: sky-blue;
+}
+
+.lead-user {
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #col2 {
+    display: none;
+    width: 50%;
+  }
+  #col1 {
+    max-width: 95%;
+  }
+  .container form {
+    margin: 0 20px 2em;
+  }
+  .profile-left {
+    display: block;
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+  }
+  .profile-right {
+    float: none;
+    display: block;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .flex-container {
+    margin: 3em 2em;
+  }
+}
+
+/*media queries for responsiveness */
+@media screen and (max-width: 699px) {
+  .header input {
+    display: none;
+  }
+  #search-icon {
+    display: none;
+  }
+  #user-icon {
+    display: none;
+  }
+  .flex-container {
+    margin: 3em 0.4em;
+  }
+
+  .header a {
+    margin: 0.5em 0.5em 0;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+  .container {
+    max-width: 95%;
+  }
+}

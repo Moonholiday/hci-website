@@ -1,51 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
     <title>cloud</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- header -->
     <div class="header">
-        <a href="index.html"><img class="logo" src="logo.png" alt="cloud-forum" width="100"></a>
-        <input type="text" placeholder="Search...">
-        <div class="header-right">
-            <a class="login" href="login.html">Log In</a>
-            <a class="active" href="signup.html">Sign Up</a>
-            <a href="profile.html"><img class="user" src="user.png" alt="user" width="30"></a>
-        </div>
+      <a href="index.html"
+        ><img class="logo" src="images/logo.png" alt="cloud-forum" width="100"
+      /></a>
+      <input type="text" placeholder="Search..." />
+      <span
+        id="search-icon"
+        class="iconify"
+        data-icon="fa-solid:search"
+        data-inline="false"
+        data-width="25"
+      ></span>
+      <div class="header-right">
+        <a aria-label="login" class="login" href="login.html">Log In</a>
+        <a aria-label="signup" class="active" href="signup.html">Sign Up</a>
+        <a aria-label="user_profile" href="profile.html">
+          <span
+            id="user-icon"
+            class="iconify"
+            data-icon="bx:bxs-user-circle"
+            data-inline="false"
+            data-width="36"
+          ></span
+        ></a>
+      </div>
     </div>
 
     <!-- navigation -->
     <div class="container">
-        <ul class="outer-bar">
-            <li class="navbar"><a href="#">Categories</a></li>
-            <li class="navbar"><a href="#">Level</a></li>
-            <li class="navbar"><a href="#">Popular</a></li>
-        </ul>
+      <ul class="outer-bar">
+        <li class="navbar"><a href="categories.html">Categories</a></li>
+        <li class="navbar"><a href="level.html">Level</a></li>
+        <li class="navbar"><a href="Popular.html">Popular</a></li>
+      </ul>
     </div>
 
     <!-- main-section -->
     <div class="container">
-        <div class="flex-container">
-            <h1>About</h1>
-            <div class="columns" id="col1"><h1>col1</h1></div>
-            <div class="columns" id="col2"><h1>col2</h1></div>
+      <div class="profile-left">
+        <div class="avatar-center">
+          <h1>About us</h1>
+          <img src="images/social.png" alt="Contact Us" />
         </div>
+      </div>
+      <div class="profile-right">
+        <h4>What is Cloud Forum?</h4>
+        <p>
+          Cloud forum is the place to solve endless problems via query and
+          answer.
+        </p>
+        <h4>How does Cloud forum work?</h4>
+        <p>
+          Every day, thousands of people post a query and others interested
+          provide feedback with answers or suggestions.
+        </p>
+      </div>
+      <br /><br />
+      <div class="about_links">
+        <a class="redirects" href="index.html">Visit our homepage</a>
+      </div>
+      <br />
+      <div class="how-to">
+        <div><h5>Thread</h5></div>
+        <div><h5>Comment</h5></div>
+        <div><h5>Like</h5></div>
+      </div>
+      <br />
     </div>
 
     <!-- footer -->
     <div class="footer">
-        <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div><span>© 2021 Cloud Forum Inc. All rights reserved.</span></div>
     </div>
-
-</body>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
 </html>
